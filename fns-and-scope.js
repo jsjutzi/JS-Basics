@@ -19,7 +19,7 @@ var name = 'Tyler';
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
 
-  function getName(){
+  function getName{
     var name = prompt("What is your name?");
     return name;
   }
@@ -32,9 +32,8 @@ var name = 'Tyler';
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  function welcome(){
-    
-    return alert("Welcome, " + getName());
+  function welcome(getName()){
+    alert("Welcome " + name);
   }
 
 
@@ -73,9 +72,7 @@ var name = 'Tyler';
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  function newMyName(){
-    return getName();
-  } 
+  var newMyName = myName();
 
 //Now alert the result of invoking newMyName
 
@@ -98,4 +95,4 @@ alert(newMyName);
   var innerFn = outerFn();
 
 //Now invoke innerFn.
-innerFn;
+console.log(innerFn);
